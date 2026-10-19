@@ -1,0 +1,27 @@
+{
+  "name": "emi-pktj-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend API Aplikasi Evaluasi Mutu Internal PKTJ",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/seed.js",
+    "reset": "node src/seed.js --reset",
+    "backup": "node scripts/backup-db.js",
+    "cek-password": "node scripts/cek-password-default.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "allowScripts": {
+    "better-sqlite3@13.0.3": true
+  }
+}

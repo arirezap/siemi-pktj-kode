@@ -1,0 +1,17 @@
+node_modules/
+.env
+*.db
+*.db-wal
+*.db-shm
+server/data/
+.DS_Store
+*.log
+/Bahan sasaran mutu/
+/backups/
+/ekspor-server/
+server/tmp_*
+/Paket-Operator-IT/
+
+# Izinkan folder build frontend agar cPanel langsung bisa menyajikannya tanpa build di hosting
+!client/dist/
+

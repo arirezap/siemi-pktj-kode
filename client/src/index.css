@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { @apply bg-slate-100 text-slate-800 font-sans; }
+  h1, h2, h3, h4 { @apply font-semibold text-slate-900; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2
+           text-sm font-medium transition-colors disabled:opacity-50
+           disabled:cursor-not-allowed focus:outline-none focus:ring-2
+           focus:ring-offset-1 focus:ring-pktj-400;
+  }
+  .btn-primary  { @apply btn bg-pktj-600 text-white hover:bg-pktj-700; }
+  .btn-outline  { @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-50; }
+  .btn-ghost    { @apply btn text-slate-600 hover:bg-slate-100; }
+  .btn-danger   { @apply btn bg-rose-600 text-white hover:bg-rose-700; }
+  .btn-success  { @apply btn bg-emerald-600 text-white hover:bg-emerald-700; }
+  .btn-warn     { @apply btn bg-aksen-500 text-white hover:bg-aksen-600; }
+  .btn-sm       { @apply px-2.5 py-1.5 text-xs rounded-md; }
+
+  .card   { @apply bg-white rounded-xl border border-slate-200 shadow-sm; }
+  .card-p { @apply card p-5; }
+
+  .label  { @apply block text-sm font-medium text-slate-700 mb-1.5; }
+  .input  {
+    @apply w-full rounded-lg border border-slate-300 px-3 py-2 text-sm
+           placeholder:text-slate-400 focus:border-pktj-500 focus:ring-1
+           focus:ring-pktj-500 focus:outline-none disabled:bg-slate-100;
+  }
+  .textarea { @apply input min-h-[90px] leading-relaxed; }
+  .select   { @apply input bg-white; }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium
+           whitespace-nowrap;
+  }
+
+  .th { @apply px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wide
+               text-slate-500 bg-slate-50 border-b border-slate-200; }
+  .td { @apply px-3 py-2.5 text-sm align-top border-b border-slate-100; }
+
+  .section-title { @apply text-xs font-bold uppercase tracking-wider text-pktj-700; }
+}
+
+/* --------------------------- Gaya cetak (A4) --------------------------- */
+.print-only { display: none; }
+
+@media print {
+  @page { size: A4; margin: 18mm 16mm; }
+  body { background: #fff !important; }
+  .no-print { display: none !important; }
+  .print-only { display: inline; }
+  .print-area {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-break { page-break-before: always; }
+  table { page-break-inside: auto; }
+  tr { page-break-inside: avoid; page-break-after: auto; }
+}
