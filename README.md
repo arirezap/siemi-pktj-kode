@@ -79,16 +79,16 @@ dan pembaruan): lihat `Panduan-Deploy-VPS-SIEMI-PKTJ.md`. Untuk hosting **cPanel
 
 ---
 
-## Akun Uji Coba
+## Akun Pengguna
 
-Kata sandi seluruh akun: `pktj2026`
+Akun pengguna dan hak akses dikelola secara terpusat oleh Administrator sistem melalui menu **Data Master → Pengguna**.
 
-| Peran | Surel | Kewenangan |
+| Peran | Contoh Format Surel | Kewenangan |
 |---|---|---|
 | Satuan Penjaminan Mutu | `spm@pktj.ac.id` | Seluruh modul, data master |
-| Auditor (contoh) | `frans.tohom@gmail.com` | Penilaian audit, berita acara, verifikasi tindakan koreksi |
-| Auditee | `baak@pktj.ac.id`, `rstj@pktj.ac.id`, dst. | Pelaksanaan standar dan tindakan koreksi unitnya |
-| Pimpinan | `direktur@pktj.ac.id`, `wadir1@pktj.ac.id` … `wadir3@pktj.ac.id` | Rapat Tinjauan Manajemen |
+| Auditor (contoh) | `auditor@pktj.ac.id` | Penilaian audit, berita acara, verifikasi tindakan koreksi |
+| Auditee | `unit@pktj.ac.id` | Pelaksanaan standar dan tindakan koreksi unitnya |
+| Pimpinan | `pimpinan@pktj.ac.id` | Rapat Tinjauan Manajemen |
 | Administrator | `admin@pktj.ac.id` | Seluruh kewenangan |
 
 Setiap unit organisasi PKTJ memiliki satu akun auditee (kepala unit terkait).
