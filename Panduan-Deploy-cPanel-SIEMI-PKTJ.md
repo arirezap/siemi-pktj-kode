@@ -105,9 +105,9 @@ Buka `https://siemi.domain-anda.ac.id/api/health` — harus tampil `{"ok":true,.
 
 - [ ] Beranda publik tampil; halaman berstatus draf tidak terlihat publik.
 - [ ] Login berhasil (minta akun uji dari pemilik aplikasi).
-- [ ] **Sasaran Mutu**: unit dan program kerja ada, berstatus ditetapkan (BAAK, Perpustakaan 2025/2026, dll.).
+- [ ] **Sasaran Mutu**: unit dan program kerja ada, berstatus ditetapkan.
 - [ ] **Modul 2 → tab Sasaran Mutu** tampil sebagai tabel; capaian dan realisasi terisi.
-- [ ] Nama unit **Unit Teknik Informatika** benar.
+- [ ] Nama unit dan program studi tampil dengan benar.
 - [ ] Unggah satu berkas bukti kecil, muat ulang, berkas masih ada.
 
 Bila gagal, lihat bagian 9 (Pemecahan masalah).

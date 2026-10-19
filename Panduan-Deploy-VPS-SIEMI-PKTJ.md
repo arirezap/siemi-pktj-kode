@@ -19,7 +19,7 @@ Pengguna ──HTTPS──> nginx (80/443) ──> Node/Express :4000 ──> SQ
 **Yang perlu disiapkan operator:**
 
 - VPS Ubuntu 22.04/24.04, minimal 1 vCPU / 2 GB RAM / 20 GB SSD (1 GB RAM cukup, skrip menambah swap).
-- Domain/subdomain (mis. `siemi.pktj.ac.id`) dan akses mengubah DNS-nya. Tanpa HTTPS, kata sandi terkirim polos — jangan buka ke pengguna tanpa HTTPS.
+- Domain/subdomain (mis. `siemi.domain-anda.ac.id`) dan akses mengubah DNS-nya. Tanpa HTTPS, kata sandi terkirim polos — jangan buka ke pengguna tanpa HTTPS.
 - Akses SSH (root atau user dengan sudo).
 - Waktu: sekitar 1–2 jam.
 
